@@ -3,227 +3,171 @@
    </a>
 </div>
 
-      
-## SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution (CVPR2024)
 
-<a href='https://arxiv.org/abs/2311.16518'><img src='https://img.shields.io/badge/arXiv-2311.16518-b31b1b.svg'></a> &nbsp;&nbsp;
-<a href='https://replicate.com/lucataco/seesr'><img src='https://replicate.com/lucataco/seesr/badge'></a> &nbsp;&nbsp;
-
-[Rongyuan Wu](https://scholar.google.com.hk/citations?hl=zh-CN&user=A-U8zE8AAAAJ)<sup>1,2</sup> | [Tao Yang](https://cg.cs.tsinghua.edu.cn/people/~tyang/)<sup>3</sup> | [Lingchen Sun](https://scholar.google.com/citations?hl=zh-CN&tzom=-480&user=ZCDjTn8AAAAJ)<sup>1,2</sup> | [Zhengqiang Zhang](https://scholar.google.com.hk/citations?hl=zh-CN&user=UX26wSMAAAAJ)<sup>1,2</sup> | [Shuai Li](https://scholar.google.com.hk/citations?hl=zh-CN&user=Bd73ldQAAAAJ)<sup>1,2</sup> | [Lei Zhang](https://www4.comp.polyu.edu.hk/~cslzhang/)<sup>1,2</sup>
-
-<sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>OPPO Research Institute, <sup>3</sup>ByteDance Inc.
-
-:star: If SeeSR is helpful to your images or projects, please help star this repo. Thanks! :hugs:
-
-#### 🚩Accepted by CVPR2024
-
-
-### 📢 News
-- **2024.06** Our One-Step Real-ISR work [OSEDiff](https://github.com/cswry/OSEDiff), which achieves SeeSR-level quality but is **over 30 times faster**.
-- **2024.03.10** Support [sd-turbo](https://huggingface.co/stabilityai/sd-turbo), SeeSR can get a not bad image with only **2 steps** ⚡️. Please refer to [it](#Step-sd-turbo).
-- **2024.01.12** 🔥🔥🔥 Integrated to <a href='https://replicate.com/lucataco/seesr'><img src='https://replicate.com/lucataco/seesr/badge'></a> Try out <u>[Replicate](https://replicate.com/lucataco/seesr)</u> online demo ❤️ Thanks [lucataco](https://github.com/lucataco) for the implementation. 
-- **2024.01.09** 🚀 Add Gradio demo, including turbo mode.
-- **2023.12.25** 🎅🎄🎅🎄 *Merry Christmas!!!* 
-  - 🍺 Release SeeSR-SD2-Base, including the codes and pretrained models. 
-  - 📏 We also release `RealLR200`. It includes 200 real-world low-resolution images.
-- **2023.11.28** Create this repo.
-
-### 📌 TODO
-- [ ] SeeSR-SDXL
-- [ ] SeeSR-SD2-Base-face,text
-- [ ] ~~SeeSR Acceleration~~
-
-## 🔎 Overview framework
-![seesr](figs/framework.png)
-
-## 📷 Real-World Results
-[<img src="figs/building.png" height="320px"/>](https://imgsli.com/MjI5MTA2) [<img src="figs/person1.png" height="320px"/>](https://imgsli.com/MjI5MTA3)
-[<img src="figs/nature.png" height="320px"/>](https://imgsli.com/MjI5MTA0) [<img src="figs/bird1.png" height="320px"/>](https://imgsli.com/MjI5MTA1) 
-
-
-
-
-
-![seesr](figs/data_real_suppl.jpg)
-
-## ⚙️ Dependencies and Installation
-```
-## git clone this repository
-git clone https://github.com/cswry/SeeSR.git
+<h2 id="seesr-towards-semantics-aware-real-world-image-super-resolution-cvpr2024-">SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution (CVPR2024)</h2>
+<p><a href='https://arxiv.org/abs/2311.16518'><img src='https://img.shields.io/badge/arXiv-2311.16518-b31b1b.svg'></a> &nbsp;&nbsp;
+<a href='https://replicate.com/lucataco/seesr'><img src='https://replicate.com/lucataco/seesr/badge'></a> &nbsp;&nbsp;</p>
+<p><a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=A-U8zE8AAAAJ">Rongyuan Wu</a><sup>1,2</sup> | <a href="https://cg.cs.tsinghua.edu.cn/people/~tyang/">Tao Yang</a><sup>3</sup> | <a href="https://scholar.google.com/citations?hl=zh-CN&amp;tzom=-480&amp;user=ZCDjTn8AAAAJ">Lingchen Sun</a><sup>1,2</sup> | <a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=UX26wSMAAAAJ">Zhengqiang Zhang</a><sup>1,2</sup> | <a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=Bd73ldQAAAAJ">Shuai Li</a><sup>1,2</sup> | <a href="https://www4.comp.polyu.edu.hk/~cslzhang/">Lei Zhang</a><sup>1,2</sup></p>
+<p><sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>OPPO Research Institute, <sup>3</sup>ByteDance Inc.</p>
+<p>:star: If SeeSR is helpful to your images or projects, please help star this repo. Thanks! :hugs:</p>
+<h4 id="-accepted-by-cvpr2024">🚩Accepted by CVPR2024</h4>
+<h3 id="-news">📢 News</h3>
+<ul>
+<li><strong>2024.06</strong> Our One-Step Real-ISR work <a href="https://github.com/cswry/OSEDiff">OSEDiff</a>, which achieves SeeSR-level quality but is <strong>over 30 times faster</strong>.</li>
+<li><strong>2024.03.10</strong> Support <a href="https://huggingface.co/stabilityai/sd-turbo">sd-turbo</a>, SeeSR can get a not bad image with only <strong>2 steps</strong> ⚡️. Please refer to <a href="#Step-sd-turbo">it</a>.</li>
+<li><strong>2024.01.12</strong> 🔥🔥🔥 Integrated to <a href='https://replicate.com/lucataco/seesr'><img src='https://replicate.com/lucataco/seesr/badge'></a> Try out <u><a href="https://replicate.com/lucataco/seesr">Replicate</a></u> online demo ❤️ Thanks <a href="https://github.com/lucataco">lucataco</a> for the implementation. </li>
+<li><strong>2024.01.09</strong> 🚀 Add Gradio demo, including turbo mode.</li>
+<li><strong>2023.12.25</strong> 🎅🎄🎅🎄 <em>Merry Christmas!!!</em> <ul>
+<li>🍺 Release SeeSR-SD2-Base, including the codes and pretrained models. </li>
+<li>📏 We also release <code>RealLR200</code>. It includes 200 real-world low-resolution images.</li>
+</ul>
+</li>
+<li><strong>2023.11.28</strong> Create this repo.</li>
+</ul>
+<h3 id="-todo">📌 TODO</h3>
+<ul>
+<li>[ ] SeeSR-SDXL</li>
+<li>[ ] SeeSR-SD2-Base-face,text</li>
+<li>[ ] <del>SeeSR Acceleration</del></li>
+</ul>
+<h2 id="-overview-framework">🔎 Overview framework</h2>
+<p><img src="figs/framework.png" alt="seesr"></p>
+<h2 id="-real-world-results">📷 Real-World Results</h2>
+<p><a href="https://imgsli.com/MjI5MTA2"><img src="figs/building.png" height="320px"/></a> <a href="https://imgsli.com/MjI5MTA3"><img src="figs/person1.png" height="320px"/></a>
+<a href="https://imgsli.com/MjI5MTA0"><img src="figs/nature.png" height="320px"/></a> <a href="https://imgsli.com/MjI5MTA1"><img src="figs/bird1.png" height="320px"/></a> </p>
+<p><img src="figs/data_real_suppl.jpg" alt="seesr"></p>
+<h2 id="-dependencies-and-installation">⚙️ Dependencies and Installation</h2>
+<pre><code><span class="hljs-comment">## git clone this repository</span>
+git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/cswry/SeeSR.git
 cd SeeSR
 
-# create an environment with python >= 3.8
-conda create -n seesr python=3.8
+<span class="hljs-comment"># create an environment with python &gt;= 3.8</span>
+conda create -n seesr <span class="hljs-attr">python=</span><span class="hljs-number">3.8</span>
 conda activate seesr
 pip install -r requirements.txt
-```
-
-## 🚀 Quick Inference
-#### Step 1: Download the pretrained models
-- Download the pretrained SD-2-base models from [HuggingFace](https://huggingface.co/stabilityai/stable-diffusion-2-base).
-- Download the SeeSR and DAPE models from [GoogleDrive](https://drive.google.com/drive/folders/12HXrRGEXUAnmHRaf0bIn-S8XSK4Ku0JO?usp=drive_link) or [OneDrive](https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EiUmSfWRmQFNiTGJWs7rOx0BpZn2xhoKN6tXFmTSGJ4Jfw?e=RdLbvg).
-
-You can put the models into `preset/models`.
-
-#### Step 2: Prepare testing data
-You can put the testing images in the `preset/datasets/test_datasets`.
-
-#### Step 3: Running testing command
-```
-python test_seesr.py \
---pretrained_model_path preset/models/stable-diffusion-2-base \
---prompt '' \
---seesr_model_path preset/models/seesr \
---ram_ft_path preset/models/DAPE.pth \
---image_path preset/datasets/test_datasets \
---output_dir preset/datasets/output \
---start_point lr \
---num_inference_steps 50 \
---guidance_scale 5.5 \
---process_size 512 
-```
-More details are [here](asserts/hyp.md)
-
-#### Step-sd-turbo
-Just download the weights from [sd-turbo](https://huggingface.co/stabilityai/sd-turbo), and put them into `preset/models`. Then, you can run the command. More comparisons can be found [here](asserts/turbo.md). Note that the `guidance_scale` is fixed to `1.0` in turbo mode.
-```
-python test_seesr_turbo.py \
---pretrained_model_path preset/models/sd-turbo \
---prompt '' \
---seesr_model_path preset/models/seesr \
---ram_ft_path preset/models/DAPE.pth \
---image_path preset/datasets/test_datasets \
---output_dir preset/datasets/output \
---start_point lr \
---num_inference_steps 2 \
---guidance_scale 1.0 \
---process_size 512 
-```
-[<img src="figs/turbo_steps02_frog.png" height="350px"/>](https://imgsli.com/MjQ2ODA0) [<img src="figs/turbo_steps02_building.png" height="350px"/>](https://imgsli.com/MjQ2ODA2)
-
-#### Note
-Please read the arguments in `test_seesr.py` carefully. We adopt the tiled vae method proposed by [multidiffusion-upscaler-for-automatic1111](https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111) to save GPU memory.
-
-#### Gradio Demo
-Please put the all pretrained models at `preset/models`, and then run the following command to interact with the gradio website.
-```
-python gradio_seesr.py 
-```
-We also provide gradio with [sd-turbo](https://huggingface.co/stabilityai/sd-turbo), have fun. 🤗
-```
-python gradio_seesr_turbo.py 
-```
-![seesr](figs/gradio.png)
-
-
-#### Test Benchmark
-We release our `RealLR200` at [GoogleDrive](https://drive.google.com/drive/folders/1L2VsQYQRKhWJxe6yWZU9FgBWSgBCk6mz?usp=drive_link) and [OneDrive](https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EmRLN-trNypJtO4tqleF4mAB5pVME060hRj6xuBXGsUCaA?e=PykXVx). You can download `RealSR` and `DRealSR` from [StableSR](https://huggingface.co/datasets/Iceclear/StableSR-TestSets). We also provide the copy of that at [GoogleDrive](https://drive.google.com/drive/folders/1L2VsQYQRKhWJxe6yWZU9FgBWSgBCk6mz?usp=drive_link) and [OneDrive](https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EmRLN-trNypJtO4tqleF4mAB5pVME060hRj6xuBXGsUCaA?e=PykXVx). As for the synthetic test set, you can obtain it through the synthetic methods described below.
-
-## 🌈 Train 
-
-#### Step1: Download the pretrained models
-Download the pretrained [SD-2-base models](https://huggingface.co/stabilityai/stable-diffusion-2-base) and [RAM](https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/ram_swin_large_14m.pth). You can put them into `preset/models`.
-
-#### Step2: Prepare training data
-We pre-prepare training data pairs for the training process, which would take up some memory space but save training time. We train the DAPE with [COCO](https://cocodataset.org/#home) and train the SeeSR with LSDIR+FFHQ10k.
-
-For making paired data when training DAPE, you can run:
-
-```
-python utils_data/make_paired_data_DAPE.py \
---gt_path PATH_1 PATH_2 ... \
---save_dir preset/datasets/train_datasets/training_for_dape \
---epoch 1
-```
-For making paired data when training SeeSR, you can run:
-```
-python utils_data/make_paired_data.py \
---gt_path PATH_1 PATH_2 ... \
---save_dir preset/datasets/train_datasets/training_for_dape \
---epoch 1
-```
-
-- `--gt_path` the path of gt images. If you have multi gt dirs, you can set it as `PATH1 PATH2 PATH3 ...`
-- `--save_dir` the path of paired images 
-- `--epoch` the number of epoch you want to make
-
-The difference between `make_paired_data_DAPE.py` and `make_paired_data.py` lies in that `make_paired_data_DAPE.py` resizes the entire image to a resolution of 512, while `make_paired_data.py` randomly crops a sub-image with a resolution of 512.
-
-
-Once the degraded data pairs are created, you can base them to generate tag data by running `utils_data/make_tags.py`.
-
-The data folder should be like this:
-```
-your_training_datasets/
+</code></pre><h2 id="-quick-inference">🚀 Quick Inference</h2>
+<h4 id="step-1-download-the-pretrained-models">Step 1: Download the pretrained models</h4>
+<ul>
+<li>Download the pretrained SD-2-base models from <a href="https://huggingface.co/stabilityai/stable-diffusion-2-base">HuggingFace</a>.</li>
+<li>Download the SeeSR and DAPE models from <a href="https://drive.google.com/drive/folders/12HXrRGEXUAnmHRaf0bIn-S8XSK4Ku0JO?usp=drive_link">GoogleDrive</a> or <a href="https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EiUmSfWRmQFNiTGJWs7rOx0BpZn2xhoKN6tXFmTSGJ4Jfw?e=RdLbvg">OneDrive</a>.</li>
+</ul>
+<p>You can put the models into <code>preset/models</code>.</p>
+<h4 id="step-2-prepare-testing-data">Step 2: Prepare testing data</h4>
+<p>You can put the testing images in the <code>preset/datasets/test_datasets</code>.</p>
+<h4 id="step-3-running-testing-command">Step 3: Running testing command</h4>
+<pre><code>python test_seesr.py \
+-<span class="ruby">-pretrained_model_path preset/models/stable-diffusion-<span class="hljs-number">2</span>-base \
+</span>-<span class="ruby">-prompt <span class="hljs-string">''</span> \
+</span>-<span class="ruby">-seesr_model_path preset/models/seesr \
+</span>-<span class="ruby">-ram_ft_path preset/models/DAPE.pth \
+</span>-<span class="ruby">-image_path preset/datasets/test_datasets \
+</span>-<span class="ruby">-output_dir preset/datasets/output \
+</span>-<span class="ruby">-start_point lr \
+</span>-<span class="ruby">-num_inference_steps <span class="hljs-number">50</span> \
+</span>-<span class="ruby">-guidance_scale <span class="hljs-number">5.5</span> \
+</span>-<span class="ruby">-process_size <span class="hljs-number">512</span></span>
+</code></pre><p>More details are <a href="asserts/hyp.md">here</a></p>
+<h4 id="step-sd-turbo">Step-sd-turbo</h4>
+<p>Just download the weights from <a href="https://huggingface.co/stabilityai/sd-turbo">sd-turbo</a>, and put them into <code>preset/models</code>. Then, you can run the command. More comparisons can be found <a href="asserts/turbo.md">here</a>. Note that the <code>guidance_scale</code> is fixed to <code>1.0</code> in turbo mode.</p>
+<pre><code>python test_seesr_turbo.py \
+-<span class="ruby">-pretrained_model_path preset/models/sd-turbo \
+</span>-<span class="ruby">-prompt <span class="hljs-string">''</span> \
+</span>-<span class="ruby">-seesr_model_path preset/models/seesr \
+</span>-<span class="ruby">-ram_ft_path preset/models/DAPE.pth \
+</span>-<span class="ruby">-image_path preset/datasets/test_datasets \
+</span>-<span class="ruby">-output_dir preset/datasets/output \
+</span>-<span class="ruby">-start_point lr \
+</span>-<span class="ruby">-num_inference_steps <span class="hljs-number">2</span> \
+</span>-<span class="ruby">-guidance_scale <span class="hljs-number">1.0</span> \
+</span>-<span class="ruby">-process_size <span class="hljs-number">512</span></span>
+</code></pre><p><a href="https://imgsli.com/MjQ2ODA0"><img src="figs/turbo_steps02_frog.png" height="350px"/></a> <a href="https://imgsli.com/MjQ2ODA2"><img src="figs/turbo_steps02_building.png" height="350px"/></a></p>
+<h4 id="note">Note</h4>
+<p>Please read the arguments in <code>test_seesr.py</code> carefully. We adopt the tiled vae method proposed by <a href="https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111">multidiffusion-upscaler-for-automatic1111</a> to save GPU memory.</p>
+<h4 id="gradio-demo">Gradio Demo</h4>
+<p>Please put the all pretrained models at <code>preset/models</code>, and then run the following command to interact with the gradio website.</p>
+<pre><code><span class="hljs-keyword">python</span> gradio_seesr.<span class="hljs-keyword">py</span>
+</code></pre><p>We also provide gradio with <a href="https://huggingface.co/stabilityai/sd-turbo">sd-turbo</a>, have fun. 🤗</p>
+<pre><code><span class="hljs-keyword">python</span> gradio_seesr_turbo.<span class="hljs-keyword">py</span>
+</code></pre><p><img src="figs/gradio.png" alt="seesr"></p>
+<h4 id="test-benchmark">Test Benchmark</h4>
+<p>We release our <code>RealLR200</code> at <a href="https://drive.google.com/drive/folders/1L2VsQYQRKhWJxe6yWZU9FgBWSgBCk6mz?usp=drive_link">GoogleDrive</a> and <a href="https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EmRLN-trNypJtO4tqleF4mAB5pVME060hRj6xuBXGsUCaA?e=PykXVx">OneDrive</a>. You can download <code>RealSR</code> and <code>DRealSR</code> from <a href="https://huggingface.co/datasets/Iceclear/StableSR-TestSets">StableSR</a>. We also provide the copy of that at <a href="https://drive.google.com/drive/folders/1L2VsQYQRKhWJxe6yWZU9FgBWSgBCk6mz?usp=drive_link">GoogleDrive</a> and <a href="https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EmRLN-trNypJtO4tqleF4mAB5pVME060hRj6xuBXGsUCaA?e=PykXVx">OneDrive</a>. As for the synthetic test set, you can obtain it through the synthetic methods described below.</p>
+<h2 id="-train">🌈 Train</h2>
+<h4 id="step1-download-the-pretrained-models">Step1: Download the pretrained models</h4>
+<p>Download the pretrained <a href="https://huggingface.co/stabilityai/stable-diffusion-2-base">SD-2-base models</a> and <a href="https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/ram_swin_large_14m.pth">RAM</a>. You can put them into <code>preset/models</code>.</p>
+<h4 id="step2-prepare-training-data">Step2: Prepare training data</h4>
+<p>We pre-prepare training data pairs for the training process, which would take up some memory space but save training time. We train the DAPE with <a href="https://cocodataset.org/#home">COCO</a> and train the SeeSR with LSDIR+FFHQ10k.</p>
+<p>For making paired data when training DAPE, you can run:</p>
+<pre><code>python utils_data/make_paired_data_DAPE.py \
+-<span class="ruby">-gt_path PATH_1 PATH_2 ... \
+</span>-<span class="ruby">-save_dir preset/datasets/train_datasets/training_for_dape \
+</span>-<span class="ruby">-epoch <span class="hljs-number">1</span></span>
+</code></pre><p>For making paired data when training SeeSR, you can run:</p>
+<pre><code>python utils_data/make_paired_data.py \
+-<span class="ruby">-gt_path PATH_1 PATH_2 ... \
+</span>-<span class="ruby">-save_dir preset/datasets/train_datasets/training_for_dape \
+</span>-<span class="ruby">-epoch <span class="hljs-number">1</span></span>
+</code></pre><ul>
+<li><code>--gt_path</code> the path of gt images. If you have multi gt dirs, you can set it as <code>PATH1 PATH2 PATH3 ...</code></li>
+<li><code>--save_dir</code> the path of paired images </li>
+<li><code>--epoch</code> the number of epoch you want to make</li>
+</ul>
+<p>The difference between <code>make_paired_data_DAPE.py</code> and <code>make_paired_data.py</code> lies in that <code>make_paired_data_DAPE.py</code> resizes the entire image to a resolution of 512, while <code>make_paired_data.py</code> randomly crops a sub-image with a resolution of 512.</p>
+<p>Once the degraded data pairs are created, you can base them to generate tag data by running <code>utils_data/make_tags.py</code>.</p>
+<p>The data folder should be like this:</p>
+<pre><code>your_training_datasets/
     └── gt
-        └── 0000001.png # GT images, (512, 512, 3)
+        └── <span class="hljs-number">0000001.</span>png # GT images, (<span class="hljs-number">512</span>, <span class="hljs-number">512</span>, <span class="hljs-number">3</span>)
         └── ...
     └── lr
-        └── 0000001.png # LR images, (512, 512, 3)
+        └── <span class="hljs-number">0000001.</span>png # LR images, (<span class="hljs-number">512</span>, <span class="hljs-number">512</span>, <span class="hljs-number">3</span>)
         └── ...
     └── tag
-        └── 0000001.txt # tag prompts
+        └── <span class="hljs-number">0000001.</span>txt # tag prompts
         └── ...
-```
-
-#### Step3: Training for DAPE
-Please specify the DAPE training data path at `line 13` of `basicsr/options/dape.yaml`, then run the training command:
-```
-python basicsr/train.py -opt basicsr/options/dape.yaml
-```
-You can modify the parameters in `dape.yaml` to adapt to your specific situation, such as the number of GPUs, batch size, optimizer selection, etc. For more details, please refer to the settings in Basicsr. 
-#### Step4: Training for SeeSR
-```
-CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7," accelerate launch train_seesr.py \
---pretrained_model_name_or_path="preset/models/stable-diffusion-2-base" \
---output_dir="./experience/seesr" \
---root_folders 'preset/datasets/training_datasets' \
---ram_ft_path 'preset/models/DAPE.pth' \
---enable_xformers_memory_efficient_attention \
---mixed_precision="fp16" \
---resolution=512 \
---learning_rate=5e-5 \
---train_batch_size=2 \
---gradient_accumulation_steps=2 \
---null_text_ratio=0.5 
---dataloader_num_workers=0 \
---checkpointing_steps=10000 
-```
-- `--pretrained_model_name_or_path` the path of pretrained SD model from Step 1
-- `--root_folders` the path of your training datasets from Step 2
-- `--ram_ft_path` the path of your DAPE model from Step 3
-
-
-The overall batch size is determined by num of `CUDA_VISIBLE_DEVICES`, `--train_batch_size`, and `--gradient_accumulation_steps` collectively. If your GPU memory is limited, you can consider reducing `--train_batch_size` while increasing `--gradient_accumulation_steps`.
-
-
-## ❤️ Acknowledgments
-This project is based on [diffusers](https://github.com/huggingface/diffusers) and [BasicSR](https://github.com/XPixelGroup/BasicSR). Some codes are brought from [PASD](https://github.com/yangxy/PASD) and [RAM](https://github.com/xinyu1205/recognize-anything). Thanks for their awesome works. We also pay tribute to the pioneering work of [StableSR](https://github.com/IceClear/StableSR).
-
-## 📧 Contact
-If you have any questions, please feel free to contact: `rong-yuan.wu@connect.polyu.hk`
-
-## 🎓Citations
-If our code helps your research or work, please consider citing our paper.
-The following are BibTeX references:
-
-```
-@inproceedings{wu2024seesr,
-  title={Seesr: Towards semantics-aware real-world image super-resolution},
-  author={Wu, Rongyuan and Yang, Tao and Sun, Lingchen and Zhang, Zhengqiang and Li, Shuai and Zhang, Lei},
-  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
-  pages={25456--25467},
-  year={2024}
+</code></pre><h4 id="step3-training-for-dape">Step3: Training for DAPE</h4>
+<p>Please specify the DAPE training data path at <code>line 13</code> of <code>basicsr/options/dape.yaml</code>, then run the training command:</p>
+<pre><code><span class="hljs-keyword">python</span> basicsr/train.<span class="hljs-keyword">py</span> -<span class="hljs-keyword">opt</span> basicsr/<span class="hljs-keyword">options</span>/dape.yaml
+</code></pre><p>You can modify the parameters in <code>dape.yaml</code> to adapt to your specific situation, such as the number of GPUs, batch size, optimizer selection, etc. For more details, please refer to the settings in Basicsr. </p>
+<h4 id="step4-training-for-seesr">Step4: Training for SeeSR</h4>
+<pre><code>CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7," accelerate launch train_seesr.py \
+-<span class="ruby">-pretrained_model_name_or_path=<span class="hljs-string">"preset/models/stable-diffusion-2-base"</span> \
+</span>-<span class="ruby">-output_dir=<span class="hljs-string">"./experience/seesr"</span> \
+</span>-<span class="ruby">-root_folders <span class="hljs-string">'preset/datasets/training_datasets'</span> \
+</span>-<span class="ruby">-ram_ft_path <span class="hljs-string">'preset/models/DAPE.pth'</span> \
+</span>-<span class="ruby">-enable_xformers_memory_efficient_attention \
+</span>-<span class="ruby">-mixed_precision=<span class="hljs-string">"fp16"</span> \
+</span>-<span class="ruby">-resolution=<span class="hljs-number">512</span> \
+</span>-<span class="ruby">-learning_rate=<span class="hljs-number">5</span>e-<span class="hljs-number">5</span> \
+</span>-<span class="ruby">-train_batch_size=<span class="hljs-number">2</span> \
+</span>-<span class="ruby">-gradient_accumulation_steps=<span class="hljs-number">2</span> \
+</span>-<span class="ruby">-null_text_ratio=<span class="hljs-number">0</span>.<span class="hljs-number">5</span> 
+</span>-<span class="ruby">-dataloader_num_workers=<span class="hljs-number">0</span> \
+</span>-<span class="ruby">-checkpointing_steps=<span class="hljs-number">10000</span></span>
+</code></pre><ul>
+<li><code>--pretrained_model_name_or_path</code> the path of pretrained SD model from Step 1</li>
+<li><code>--root_folders</code> the path of your training datasets from Step 2</li>
+<li><code>--ram_ft_path</code> the path of your DAPE model from Step 3</li>
+</ul>
+<p>The overall batch size is determined by num of <code>CUDA_VISIBLE_DEVICES</code>, <code>--train_batch_size</code>, and <code>--gradient_accumulation_steps</code> collectively. If your GPU memory is limited, you can consider reducing <code>--train_batch_size</code> while increasing <code>--gradient_accumulation_steps</code>.</p>
+<h2 id="-acknowledgments">❤️ Acknowledgments</h2>
+<p>This project is based on <a href="https://github.com/huggingface/diffusers">diffusers</a> and <a href="https://github.com/XPixelGroup/BasicSR">BasicSR</a>. Some codes are brought from <a href="https://github.com/yangxy/PASD">PASD</a> and <a href="https://github.com/xinyu1205/recognize-anything">RAM</a>. Thanks for their awesome works. We also pay tribute to the pioneering work of <a href="https://github.com/IceClear/StableSR">StableSR</a>.</p>
+<h2 id="-contact">📧 Contact</h2>
+<p>If you have any questions, please feel free to contact: <code>rong-yuan.wu@connect.polyu.hk</code></p>
+<h2 id="-citations">🎓Citations</h2>
+<p>If our code helps your research or work, please consider citing our paper.
+The following are BibTeX references:</p>
+<pre><code>@inproceedings{wu2024seesr,
+  title={Seesr: Towards semantics-aware <span class="hljs-built_in">real</span>-world image super-resolution},
+  author={Wu, Rongyuan <span class="hljs-keyword">and</span> Yang, Tao <span class="hljs-keyword">and</span> Sun, Lingchen <span class="hljs-keyword">and</span> Zhang, Zhengqiang <span class="hljs-keyword">and</span> Li, Shuai <span class="hljs-keyword">and</span> Zhang, Lei},
+  booktitle={Proceedings <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> IEEE/CVF conference <span class="hljs-keyword">on</span> computer vision <span class="hljs-keyword">and</span> pattern recognition},
+  pages={<span class="hljs-number">25456</span><span class="hljs-comment">--25467},</span>
+  <span class="hljs-built_in">year</span>={<span class="hljs-number">2024</span>}
 }
-```
-
-## 🎫 License
-This project and related weights are released under the [Apache 2.0 license](LICENSE).
-
-
+</code></pre><h2 id="-license">🎫 License</h2>
+<p>This project and related weights are released under the <a href="LICENSE">Apache 2.0 license</a>.</p>
 <details>
 <summary>statistics</summary>
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=cswry/SeeSR)
+<img src="https://visitor-badge.laobi.icu/badge?page_id=cswry/SeeSR" alt="visitors">
 
 </details>
