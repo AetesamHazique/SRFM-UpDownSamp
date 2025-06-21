@@ -1,173 +1,312 @@
-<div align=center class="logo">
-      <img src="figs/logo1.png" style="width:640px">
-   </a>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
 </div>
+</div>
+</section>
+<!-- End image carousel -->
 
 
-<h2 id="seesr-towards-semantics-aware-real-world-image-super-resolution-cvpr2024-">SeeSR: Towards Semantics-Aware Real-World Image Super-Resolution (CVPR2024)</h2>
-<p><a href='https://arxiv.org/abs/2311.16518'><img src='https://img.shields.io/badge/arXiv-2311.16518-b31b1b.svg'></a> &nbsp;&nbsp;
-<a href='https://replicate.com/lucataco/seesr'><img src='https://replicate.com/lucataco/seesr/badge'></a> &nbsp;&nbsp;</p>
-<p><a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=A-U8zE8AAAAJ">Rongyuan Wu</a><sup>1,2</sup> | <a href="https://cg.cs.tsinghua.edu.cn/people/~tyang/">Tao Yang</a><sup>3</sup> | <a href="https://scholar.google.com/citations?hl=zh-CN&amp;tzom=-480&amp;user=ZCDjTn8AAAAJ">Lingchen Sun</a><sup>1,2</sup> | <a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=UX26wSMAAAAJ">Zhengqiang Zhang</a><sup>1,2</sup> | <a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=Bd73ldQAAAAJ">Shuai Li</a><sup>1,2</sup> | <a href="https://www4.comp.polyu.edu.hk/~cslzhang/">Lei Zhang</a><sup>1,2</sup></p>
-<p><sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>OPPO Research Institute, <sup>3</sup>ByteDance Inc.</p>
-<p>:star: If SeeSR is helpful to your images or projects, please help star this repo. Thanks! :hugs:</p>
-<h4 id="-accepted-by-cvpr2024">🚩Accepted by CVPR2024</h4>
-<h3 id="-news">📢 News</h3>
-<ul>
-<li><strong>2024.06</strong> Our One-Step Real-ISR work <a href="https://github.com/cswry/OSEDiff">OSEDiff</a>, which achieves SeeSR-level quality but is <strong>over 30 times faster</strong>.</li>
-<li><strong>2024.03.10</strong> Support <a href="https://huggingface.co/stabilityai/sd-turbo">sd-turbo</a>, SeeSR can get a not bad image with only <strong>2 steps</strong> ⚡️. Please refer to <a href="#Step-sd-turbo">it</a>.</li>
-<li><strong>2024.01.12</strong> 🔥🔥🔥 Integrated to <a href='https://replicate.com/lucataco/seesr'><img src='https://replicate.com/lucataco/seesr/badge'></a> Try out <u><a href="https://replicate.com/lucataco/seesr">Replicate</a></u> online demo ❤️ Thanks <a href="https://github.com/lucataco">lucataco</a> for the implementation. </li>
-<li><strong>2024.01.09</strong> 🚀 Add Gradio demo, including turbo mode.</li>
-<li><strong>2023.12.25</strong> 🎅🎄🎅🎄 <em>Merry Christmas!!!</em> <ul>
-<li>🍺 Release SeeSR-SD2-Base, including the codes and pretrained models. </li>
-<li>📏 We also release <code>RealLR200</code>. It includes 200 real-world low-resolution images.</li>
-</ul>
-</li>
-<li><strong>2023.11.28</strong> Create this repo.</li>
-</ul>
-<h3 id="-todo">📌 TODO</h3>
-<ul>
-<li>[ ] SeeSR-SDXL</li>
-<li>[ ] SeeSR-SD2-Base-face,text</li>
-<li>[ ] <del>SeeSR Acceleration</del></li>
-</ul>
-<h2 id="-overview-framework">🔎 Overview framework</h2>
-<p><img src="figs/framework.png" alt="seesr"></p>
-<h2 id="-real-world-results">📷 Real-World Results</h2>
-<p><a href="https://imgsli.com/MjI5MTA2"><img src="figs/building.png" height="320px"/></a> <a href="https://imgsli.com/MjI5MTA3"><img src="figs/person1.png" height="320px"/></a>
-<a href="https://imgsli.com/MjI5MTA0"><img src="figs/nature.png" height="320px"/></a> <a href="https://imgsli.com/MjI5MTA1"><img src="figs/bird1.png" height="320px"/></a> </p>
-<p><img src="figs/data_real_suppl.jpg" alt="seesr"></p>
-<h2 id="-dependencies-and-installation">⚙️ Dependencies and Installation</h2>
-<pre><code><span class="hljs-comment">## git clone this repository</span>
-git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/cswry/SeeSR.git
-cd SeeSR
 
-<span class="hljs-comment"># create an environment with python &gt;= 3.8</span>
-conda create -n seesr <span class="hljs-attr">python=</span><span class="hljs-number">3.8</span>
-conda activate seesr
-pip install -r requirements.txt
-</code></pre><h2 id="-quick-inference">🚀 Quick Inference</h2>
-<h4 id="step-1-download-the-pretrained-models">Step 1: Download the pretrained models</h4>
-<ul>
-<li>Download the pretrained SD-2-base models from <a href="https://huggingface.co/stabilityai/stable-diffusion-2-base">HuggingFace</a>.</li>
-<li>Download the SeeSR and DAPE models from <a href="https://drive.google.com/drive/folders/12HXrRGEXUAnmHRaf0bIn-S8XSK4Ku0JO?usp=drive_link">GoogleDrive</a> or <a href="https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EiUmSfWRmQFNiTGJWs7rOx0BpZn2xhoKN6tXFmTSGJ4Jfw?e=RdLbvg">OneDrive</a>.</li>
-</ul>
-<p>You can put the models into <code>preset/models</code>.</p>
-<h4 id="step-2-prepare-testing-data">Step 2: Prepare testing data</h4>
-<p>You can put the testing images in the <code>preset/datasets/test_datasets</code>.</p>
-<h4 id="step-3-running-testing-command">Step 3: Running testing command</h4>
-<pre><code>python test_seesr.py \
--<span class="ruby">-pretrained_model_path preset/models/stable-diffusion-<span class="hljs-number">2</span>-base \
-</span>-<span class="ruby">-prompt <span class="hljs-string">''</span> \
-</span>-<span class="ruby">-seesr_model_path preset/models/seesr \
-</span>-<span class="ruby">-ram_ft_path preset/models/DAPE.pth \
-</span>-<span class="ruby">-image_path preset/datasets/test_datasets \
-</span>-<span class="ruby">-output_dir preset/datasets/output \
-</span>-<span class="ruby">-start_point lr \
-</span>-<span class="ruby">-num_inference_steps <span class="hljs-number">50</span> \
-</span>-<span class="ruby">-guidance_scale <span class="hljs-number">5.5</span> \
-</span>-<span class="ruby">-process_size <span class="hljs-number">512</span></span>
-</code></pre><p>More details are <a href="asserts/hyp.md">here</a></p>
-<h4 id="step-sd-turbo">Step-sd-turbo</h4>
-<p>Just download the weights from <a href="https://huggingface.co/stabilityai/sd-turbo">sd-turbo</a>, and put them into <code>preset/models</code>. Then, you can run the command. More comparisons can be found <a href="asserts/turbo.md">here</a>. Note that the <code>guidance_scale</code> is fixed to <code>1.0</code> in turbo mode.</p>
-<pre><code>python test_seesr_turbo.py \
--<span class="ruby">-pretrained_model_path preset/models/sd-turbo \
-</span>-<span class="ruby">-prompt <span class="hljs-string">''</span> \
-</span>-<span class="ruby">-seesr_model_path preset/models/seesr \
-</span>-<span class="ruby">-ram_ft_path preset/models/DAPE.pth \
-</span>-<span class="ruby">-image_path preset/datasets/test_datasets \
-</span>-<span class="ruby">-output_dir preset/datasets/output \
-</span>-<span class="ruby">-start_point lr \
-</span>-<span class="ruby">-num_inference_steps <span class="hljs-number">2</span> \
-</span>-<span class="ruby">-guidance_scale <span class="hljs-number">1.0</span> \
-</span>-<span class="ruby">-process_size <span class="hljs-number">512</span></span>
-</code></pre><p><a href="https://imgsli.com/MjQ2ODA0"><img src="figs/turbo_steps02_frog.png" height="350px"/></a> <a href="https://imgsli.com/MjQ2ODA2"><img src="figs/turbo_steps02_building.png" height="350px"/></a></p>
-<h4 id="note">Note</h4>
-<p>Please read the arguments in <code>test_seesr.py</code> carefully. We adopt the tiled vae method proposed by <a href="https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111">multidiffusion-upscaler-for-automatic1111</a> to save GPU memory.</p>
-<h4 id="gradio-demo">Gradio Demo</h4>
-<p>Please put the all pretrained models at <code>preset/models</code>, and then run the following command to interact with the gradio website.</p>
-<pre><code><span class="hljs-keyword">python</span> gradio_seesr.<span class="hljs-keyword">py</span>
-</code></pre><p>We also provide gradio with <a href="https://huggingface.co/stabilityai/sd-turbo">sd-turbo</a>, have fun. 🤗</p>
-<pre><code><span class="hljs-keyword">python</span> gradio_seesr_turbo.<span class="hljs-keyword">py</span>
-</code></pre><p><img src="figs/gradio.png" alt="seesr"></p>
-<h4 id="test-benchmark">Test Benchmark</h4>
-<p>We release our <code>RealLR200</code> at <a href="https://drive.google.com/drive/folders/1L2VsQYQRKhWJxe6yWZU9FgBWSgBCk6mz?usp=drive_link">GoogleDrive</a> and <a href="https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EmRLN-trNypJtO4tqleF4mAB5pVME060hRj6xuBXGsUCaA?e=PykXVx">OneDrive</a>. You can download <code>RealSR</code> and <code>DRealSR</code> from <a href="https://huggingface.co/datasets/Iceclear/StableSR-TestSets">StableSR</a>. We also provide the copy of that at <a href="https://drive.google.com/drive/folders/1L2VsQYQRKhWJxe6yWZU9FgBWSgBCk6mz?usp=drive_link">GoogleDrive</a> and <a href="https://connectpolyu-my.sharepoint.com/:f:/g/personal/22042244r_connect_polyu_hk/EmRLN-trNypJtO4tqleF4mAB5pVME060hRj6xuBXGsUCaA?e=PykXVx">OneDrive</a>. As for the synthetic test set, you can obtain it through the synthetic methods described below.</p>
-<h2 id="-train">🌈 Train</h2>
-<h4 id="step1-download-the-pretrained-models">Step1: Download the pretrained models</h4>
-<p>Download the pretrained <a href="https://huggingface.co/stabilityai/stable-diffusion-2-base">SD-2-base models</a> and <a href="https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/ram_swin_large_14m.pth">RAM</a>. You can put them into <code>preset/models</code>.</p>
-<h4 id="step2-prepare-training-data">Step2: Prepare training data</h4>
-<p>We pre-prepare training data pairs for the training process, which would take up some memory space but save training time. We train the DAPE with <a href="https://cocodataset.org/#home">COCO</a> and train the SeeSR with LSDIR+FFHQ10k.</p>
-<p>For making paired data when training DAPE, you can run:</p>
-<pre><code>python utils_data/make_paired_data_DAPE.py \
--<span class="ruby">-gt_path PATH_1 PATH_2 ... \
-</span>-<span class="ruby">-save_dir preset/datasets/train_datasets/training_for_dape \
-</span>-<span class="ruby">-epoch <span class="hljs-number">1</span></span>
-</code></pre><p>For making paired data when training SeeSR, you can run:</p>
-<pre><code>python utils_data/make_paired_data.py \
--<span class="ruby">-gt_path PATH_1 PATH_2 ... \
-</span>-<span class="ruby">-save_dir preset/datasets/train_datasets/training_for_dape \
-</span>-<span class="ruby">-epoch <span class="hljs-number">1</span></span>
-</code></pre><ul>
-<li><code>--gt_path</code> the path of gt images. If you have multi gt dirs, you can set it as <code>PATH1 PATH2 PATH3 ...</code></li>
-<li><code>--save_dir</code> the path of paired images </li>
-<li><code>--epoch</code> the number of epoch you want to make</li>
-</ul>
-<p>The difference between <code>make_paired_data_DAPE.py</code> and <code>make_paired_data.py</code> lies in that <code>make_paired_data_DAPE.py</code> resizes the entire image to a resolution of 512, while <code>make_paired_data.py</code> randomly crops a sub-image with a resolution of 512.</p>
-<p>Once the degraded data pairs are created, you can base them to generate tag data by running <code>utils_data/make_tags.py</code>.</p>
-<p>The data folder should be like this:</p>
-<pre><code>your_training_datasets/
-    └── gt
-        └── <span class="hljs-number">0000001.</span>png # GT images, (<span class="hljs-number">512</span>, <span class="hljs-number">512</span>, <span class="hljs-number">3</span>)
-        └── ...
-    └── lr
-        └── <span class="hljs-number">0000001.</span>png # LR images, (<span class="hljs-number">512</span>, <span class="hljs-number">512</span>, <span class="hljs-number">3</span>)
-        └── ...
-    └── tag
-        └── <span class="hljs-number">0000001.</span>txt # tag prompts
-        └── ...
-</code></pre><h4 id="step3-training-for-dape">Step3: Training for DAPE</h4>
-<p>Please specify the DAPE training data path at <code>line 13</code> of <code>basicsr/options/dape.yaml</code>, then run the training command:</p>
-<pre><code><span class="hljs-keyword">python</span> basicsr/train.<span class="hljs-keyword">py</span> -<span class="hljs-keyword">opt</span> basicsr/<span class="hljs-keyword">options</span>/dape.yaml
-</code></pre><p>You can modify the parameters in <code>dape.yaml</code> to adapt to your specific situation, such as the number of GPUs, batch size, optimizer selection, etc. For more details, please refer to the settings in Basicsr. </p>
-<h4 id="step4-training-for-seesr">Step4: Training for SeeSR</h4>
-<pre><code>CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7," accelerate launch train_seesr.py \
--<span class="ruby">-pretrained_model_name_or_path=<span class="hljs-string">"preset/models/stable-diffusion-2-base"</span> \
-</span>-<span class="ruby">-output_dir=<span class="hljs-string">"./experience/seesr"</span> \
-</span>-<span class="ruby">-root_folders <span class="hljs-string">'preset/datasets/training_datasets'</span> \
-</span>-<span class="ruby">-ram_ft_path <span class="hljs-string">'preset/models/DAPE.pth'</span> \
-</span>-<span class="ruby">-enable_xformers_memory_efficient_attention \
-</span>-<span class="ruby">-mixed_precision=<span class="hljs-string">"fp16"</span> \
-</span>-<span class="ruby">-resolution=<span class="hljs-number">512</span> \
-</span>-<span class="ruby">-learning_rate=<span class="hljs-number">5</span>e-<span class="hljs-number">5</span> \
-</span>-<span class="ruby">-train_batch_size=<span class="hljs-number">2</span> \
-</span>-<span class="ruby">-gradient_accumulation_steps=<span class="hljs-number">2</span> \
-</span>-<span class="ruby">-null_text_ratio=<span class="hljs-number">0</span>.<span class="hljs-number">5</span> 
-</span>-<span class="ruby">-dataloader_num_workers=<span class="hljs-number">0</span> \
-</span>-<span class="ruby">-checkpointing_steps=<span class="hljs-number">10000</span></span>
-</code></pre><ul>
-<li><code>--pretrained_model_name_or_path</code> the path of pretrained SD model from Step 1</li>
-<li><code>--root_folders</code> the path of your training datasets from Step 2</li>
-<li><code>--ram_ft_path</code> the path of your DAPE model from Step 3</li>
-</ul>
-<p>The overall batch size is determined by num of <code>CUDA_VISIBLE_DEVICES</code>, <code>--train_batch_size</code>, and <code>--gradient_accumulation_steps</code> collectively. If your GPU memory is limited, you can consider reducing <code>--train_batch_size</code> while increasing <code>--gradient_accumulation_steps</code>.</p>
-<h2 id="-acknowledgments">❤️ Acknowledgments</h2>
-<p>This project is based on <a href="https://github.com/huggingface/diffusers">diffusers</a> and <a href="https://github.com/XPixelGroup/BasicSR">BasicSR</a>. Some codes are brought from <a href="https://github.com/yangxy/PASD">PASD</a> and <a href="https://github.com/xinyu1205/recognize-anything">RAM</a>. Thanks for their awesome works. We also pay tribute to the pioneering work of <a href="https://github.com/IceClear/StableSR">StableSR</a>.</p>
-<h2 id="-contact">📧 Contact</h2>
-<p>If you have any questions, please feel free to contact: <code>rong-yuan.wu@connect.polyu.hk</code></p>
-<h2 id="-citations">🎓Citations</h2>
-<p>If our code helps your research or work, please consider citing our paper.
-The following are BibTeX references:</p>
-<pre><code>@inproceedings{wu2024seesr,
-  title={Seesr: Towards semantics-aware <span class="hljs-built_in">real</span>-world image super-resolution},
-  author={Wu, Rongyuan <span class="hljs-keyword">and</span> Yang, Tao <span class="hljs-keyword">and</span> Sun, Lingchen <span class="hljs-keyword">and</span> Zhang, Zhengqiang <span class="hljs-keyword">and</span> Li, Shuai <span class="hljs-keyword">and</span> Zhang, Lei},
-  booktitle={Proceedings <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> IEEE/CVF conference <span class="hljs-keyword">on</span> computer vision <span class="hljs-keyword">and</span> pattern recognition},
-  pages={<span class="hljs-number">25456</span><span class="hljs-comment">--25467},</span>
-  <span class="hljs-built_in">year</span>={<span class="hljs-number">2024</span>}
-}
-</code></pre><h2 id="-license">🎫 License</h2>
-<p>This project and related weights are released under the <a href="LICENSE">Apache 2.0 license</a>.</p>
-<details>
-<summary>statistics</summary>
 
-<img src="https://visitor-badge.laobi.icu/badge?page_id=cswry/SeeSR" alt="visitors">
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
 
-</details>
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
