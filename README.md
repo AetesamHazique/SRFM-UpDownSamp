@@ -3,7 +3,7 @@
 <a href='https://arxiv.org/abs/2311.16518'><img src='https://img.shields.io/badge/arXiv-2311.16518-b31b1b.svg'></a> &nbsp;&nbsp;
 <!--<a href='https://replicate.com/lucataco/seesr'><img src='https://replicate.com/lucataco/seesr/badge'></a> &nbsp;&nbsp; -->
 
-[Hazique Aetesam](https://scholar.google.com/citations?user=n1fvdkwAAAAJ&hl=en)<sup>1</sup> 
+[Hazique Aetesam]([https://scholar.google.com/citations?user=n1fvdkwAAAAJ&hl=en](https://bitmesra.ac.in/Show_profile/734D546B2B77457A42364C73305A696C7874515763413D3D))<sup>1</sup> 
 
 <sup>1</sup>[Birla Institute of Technology Mesra](https://bitmesra.ac.in/), Patna Campus
 
