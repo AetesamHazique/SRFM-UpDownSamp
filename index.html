@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Sub-Diffraction Level Single Image Super-Resolution in Fluorescence Microscopy Using Successive Up and Down Sampling Network</title>
+  <title>Enhancing Fluorescence Microscopy Resolution Beyond the Diffraction Limit via Cascaded Up- and Down-Sampling Networks</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -36,6 +36,7 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/slider.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -43,6 +44,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="static/js/slider.js"></script>
 </head>
 <body>
 
@@ -52,28 +54,26 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Sub-Diffraction Level Single Image Super-Resolution in Fluorescence Microscopy Using Successive Up and Down Sampling Network</h1>
+            <h1 class="title is-1 publication-title">Enhancing Fluorescence Microscopy Resolution Beyond the Diffraction Limit via Cascaded Up- and Down-Sampling Networks</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                <a href="https://bitmesra.ac.in/Show_profile/734D546B2B77457A42364C73305A696C7874515763413D3D" 
+                target="_blank">Hazique Aetesam</a><sup>*</sup>,</span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="inst-block"><a href="https://bitmesra.ac.in/" target="_blank">Birla Institute of Technology Mesra,
+                         Patna Campus</a>
+                        <br>International Conference on Computer Vision and Image Processing (CVIP-2025)</span>
+                    
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="F:\Implementation\DBPN-FMSR\static\pdfs\CVIP_SRM-paper.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -95,7 +95,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/AetesamHazique/SRFM-UpDownSamp.git" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -123,12 +123,12 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser video
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
+        Your video here 
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -138,7 +138,34 @@
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+End teaser video -->
+
+<hr>
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+        <h2 class="title is-3">Model Architecture</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="figs\model-arch.png" width="720px" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          The complete model architecture with up-projection, down-projection and pluggable external attention blocks.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="figs\updown-projBlock.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Up-Projection and Down-Projection Units in the main SR network.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,7 +175,26 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Fluorescence microscopy enables high-contrast visualization of subcellular 
+            structures through the use of synthetic fluorescent markers, though it is 
+            limited by lower spatial resolution and the risk of photobleaching. 
+            Super-resolution (SR) fluorescence microscopy overcomes the diffraction 
+            barrier to resolve finer details, but comes with trade-offs such as 
+            decreased temporal resolution, the need for sophisticated equipment, 
+            optical sectioning requirements, and constraints on the sample’s exposure tolerance.
+            <br>
+            In this study, we introduce a deep learning model that employs upsampling 
+            and downsampling to achieve super-resolution. By connecting up-projection 
+            and down-projection blocks in a cascaded arrangement, our model maintains the 
+            important relationships between the input low-resolution (LR) images and the 
+            target high-resolution (HR) labels. To extract dependencies across various 
+            depths, feature maps produced at intermediate upsampling stages are 
+            combined. Additionally, external self-attention blocks are integrated after 
+            these intermediate up-projection blocks to assess pixel-level affinities. 
+            Unlike traditional self-attention mechanisms that focus on correlations 
+            within a single sample, our approach uses external attention to capture 
+            inter-sample correlations across the entire dataset, offering the added 
+            benefit of reduced computational demands.
           </p>
         </div>
       </div>
@@ -157,35 +203,103 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Dataset Description -->
+<section class="hero is-small">
+  <div class="hero-body">
+ 
+    <div class="container">
+      <h2 class="title is-3">Dataset Description</h2>
+       <div class="item">
+        <center>
+        <!-- Your image here -->
+        <img src="figs\dataset.png" width="720px" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+             <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+          <b>Row 1:</b> Different samples obtained from structured illumination miscroscopy (SIM) 
+          (acting as groundtruth data) in increasing levels of structural complexity: 
+          clathrin-coated pits (CCP), endoplastic reticulum (ER), microtubules (MT) and F-actin 
+          fibers. <b>Row 2:</b> The corresponding gradient maps where structural complexity is 
+          measured in terms of grayscale mean gradient (MG) where \(\nabla_hx\) and \(\nabla_vx\) 
+          are the gradients across horizontal and vertical axes respectively. The representative 
+          widefield CCP images for two different excitation intensities serving as input samples 
+          during model training (last column).
+        </h2></center>
+      </div>     
+      
+  
+</div>
+</div>
+</section>
+<!-- End of Dataset Description -->
+<hr>
+<!-- Image stack starts -->
+ <section class="hero is-small">
+  <div class="hero-body">
+ 
+    <div class="container">
+      <h1 class="title is-3">Results</h1>
+      <h4 class="title is-3">Super-resolution under High Fluorescence Excitation Level</h4>
+<center>
+<iframe src="static/high-ex.html" width="100%" height="450px" frameborder="0"></iframe>
+<h2 class="subtitle has-text-centered">
+        <b>(Row 1): </b>Input and super-resolved images inferred from the trained models
+        for different specimen types (clathrin coated pits (CCPs), endoplastic reticulum
+         (ER), microtubules (MT) and F-actin fibers) under high-fluorescence excitation levels.
+        <b>(Row 2):</b> The corresponding zoomed regions.
+        </h2>
+        </center>
+</div>
+</div>
 
-<!-- Image carousel -->
+<div class="hero-body">
+ 
+    <div class="container">
+      <h3 class="title is-3">Super-resolution under Low Fluorescence Excitation Level</h3>
+<center>
+<iframe src="static/low-ex.html" width="100%" height="450px" frameborder="0"></iframe>
+<h2 class="subtitle has-text-centered">
+        <b>(Row 1): </b>Input and super-resolved images inferred from the trained models
+        for different specimen types (clathrin coated pits (CCPs), endoplastic reticulum
+         (ER), microtubules (MT) and F-actin fibers) under low-fluorescence excitation levels.
+        <b>(Row 2):</b> The corresponding zoomed regions.
+        </h2>
+        </center>
+</div>
+</div>
+
+</section>
+<!-- Image stack ends -->
+
+
+
+<!-- Image carousel >
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <!- Your image here >
+        <img src="F:\Documentation\CVIP-SRM\images/quant.png" width="720px" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
+        <!- Your image here >
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
+        <!- Your image here >
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
+      <!- Your image here >
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -195,22 +309,19 @@
 </div>
 </div>
 </section>
-<!-- End image carousel -->
+<!- End image carousel -->
 
-
-
-
-<!-- Youtube video -->
+<!-- Youtube video 
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
+       Paper video. 
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
+             Youtube embed code here 
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
@@ -218,10 +329,10 @@
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+ End youtube video -->
 
 
-<!-- Video carousel -->
+<!-- Video carousel ->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
@@ -229,21 +340,21 @@
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+            <!- Your video file here ->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+            <!- Your video file here ->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
+            <!- Your video file here ->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -252,20 +363,45 @@
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
+<!- End video carousel -->
+<hr>
+<!-- Uncertainty Quantification -->
+<section class="hero is-small">
+  <div class="hero-body">
+ 
+    <div class="container">
+      <h2 class="title is-3">Uncertainty Quantification</h2>
+       <div class="item">
+        <center>
+        <!-- Your image here -->
+        <img src="F:\Documentation\CVIP-SRM\images/quant.png" width="720px" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+             <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+          Resolution Scaled Error Maps <b>(RSM)</b> and rolling Fourier Ring Correlation 
+          Maps <b>(rFRC Maps)</b> for different specimen types under the proposed 
+          methodology. Also provided are the corresponding metric values: resolution 
+          scaled error <b>(RSE)</b>, Pearson correlation coefficient <b>(RSP)</b> 
+          and structural similarity index <b>(RSSIM)</b>. Uncertainty quantification 
+          metrics: <b>rFRC value</b> (higher value indicates higher confidence in the 
+          reconstructed structures) and mean resolution <b>(Res.)</b> obtained for the 
+          given input LR image. <b>Scalebar:</b> \([0,~1]\) for RSM and \([0,~256]\) for 
+          rFRCMap from left to right.
+        </h2></center>
+      </div>     
+      
+  
+</div>
+</div>
+</section>
+<!-- End of Uncertainty Quantification -->
 
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">Presentation</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/CVIP_SRM-ppt.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -278,7 +414,16 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>
+        @inproceedings{aetesam2025two,
+        title={Enhancing Fluorescence Microscopy Resolution Beyond the Diffraction Limit via Cascaded Up-and Down-Sampling Networks},
+        author={Aetesam, Hazique},
+        booktitle={International Conference on Computer Vision and Image Processing},
+        pages={179--190},
+        year={2025},
+        organization={Springer}
+}
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
